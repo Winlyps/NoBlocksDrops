@@ -1,0 +1,5 @@
+name: NoBlocksDrops
+version: '1.0.0'
+main: winlyps.noBlocksDrops.NoBlocksDrops
+api-version: '1.20'
+authors: [ Winlyps ]
