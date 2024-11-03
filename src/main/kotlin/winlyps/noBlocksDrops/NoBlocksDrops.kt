@@ -14,6 +14,9 @@ class NoBlocksDrops : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("NoBlocksDrops plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("doTileDrops", "true")
+            logger.info("NoBlocksDrops plugin has been disabled.")
+        }
     }
 }
